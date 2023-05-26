@@ -1,4 +1,95 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: "RobotoBlack";
+    src: url(../font/Roboto-Black.ttf);
 }
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "RobotoBlack";
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    background-color: rgb(255, 70, 118);
+    color: white;
+    border-radius: 2px;
+    padding: 1.3vh 1vw;
+    font-family: "RobotoRegular";
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+/* DEBUT HEADER  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0vh 1vw 0vh 4vw;
+}
+
+header img {
+    height: 8vh;
+}
+
+nav {
+    padding: 3vh 0;
+    margin-right: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul :not(:first-child) {
+    border-left: 1px solid black;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    padding: 0 2vw;
+    font-size: 0.7rem;
+}
+
+li a:hover {
+    color: rgb(98, 224, 209);
+}
+/* FIN HEADER  */
+/* DEBUT SECTION 1 */
+
+#section1 {
+    height: 60vh;
+    background-image: url(../images/photo-1556139943-4bdca53adf1e\ 1.jpg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+#section1 h1 {
+    text-transform: uppercase;
+    padding: 3vh;
+    text-shadow: 0rem 0.1rem 0.2rem rgb(155, 155, 155);
+    font-size: 2.8rem;
+}
+/* FIN SECTION 1 */
+/* DEBUT SECTION 2 */
+
