@@ -41,6 +41,10 @@ section > :first-child {
     margin-bottom: 3vh;
 }
 
+a {
+    transition: all 0.2s ease-in;
+}
+
 .btn {
     color: rgb(255, 70, 118);
     border: 1px solid rgb(255, 70, 118);
@@ -66,7 +70,7 @@ section > :first-child {
     background-color: white;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     text-transform: uppercase;
     margin-bottom: 2vh;
     font-family: "RobotoMedium";
@@ -88,6 +92,11 @@ h3 {
 
 h4 {
     font-size: 1.3rem;
+}
+
+h5 {
+    font-family: "RobotoMedium";
+    font-size: 0.9rem;
 }
 
 li, p {
@@ -163,7 +172,6 @@ li a:hover {
 #section2 .container {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
     height: 400px;
 }
 
@@ -235,6 +243,10 @@ li a:hover {
     margin-top: 10vh;
 }
 
+#section4 .container .content {
+    padding: 0;
+}
+
 #section4 .container .content p {
     margin: 6vh 0vw 3vh 0vw;
     font-size: 1rem;
@@ -266,3 +278,149 @@ li a:hover {
 #section4 .container .content .contentTitle #underline3 {
     background-color: rgb(205, 132, 235);
 }
+/* FIN SECTION 4 */
+/* DEBUT SECTION 5 */
+
+#section5 .container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#section5 .container .card {
+    margin: 5vh;
+    width: 15vw;
+    border: 1px solid rgb(98, 224, 209);
+    padding: 1vh 2vw;
+}
+
+#section5 .container .card .name {
+    font-family: "RobotoMedium";
+    text-transform: uppercase;
+    margin-bottom: 1vh;
+    font-size: 0.95rem;
+}
+
+#section5 .container .card .job {
+    font-size: 0.8rem;
+    margin-bottom: 3vh;
+}
+
+#section5 .container .card .text {
+    font-size: 0.65rem;
+    margin-bottom: 1vh;
+}
+
+#section5 .container .card img {
+    transform: translateY(-50%);
+    border: 20px solid white;
+    margin-bottom: -5vh;
+}
+
+/* FIN SECTION 5 */
+/* DEBUT SECTION 6 */
+
+.imageBlog {
+    width: 400px;
+    height: 100%;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.imageBlog img {
+    height: 100%;
+
+    background-size: cover;
+    object-fit: cover;
+}
+
+#section6  .container article {
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+    width: 80vw;
+    margin: 8vh 5vw;
+}
+
+#section6 .container p {
+    margin-bottom: 30px;
+}
+
+.content {
+    padding-left: 195px;
+}
+
+.content .btn {
+    padding: 6px 50px;
+}
+
+.lineSeparator {
+    height: 1px;
+    background-color: rgb(98, 224, 209);
+}
+
+/* FIN SECTION 6 */
+/* DEBUT FOOTER  */
+
+footer {
+    background-color: rgb(226, 226, 226);
+}
+
+footer .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.footerLogo {
+    padding-left: 3%;
+}
+
+footer img { 
+    padding-right: 30px;
+    border-right: 1px solid black;
+}
+
+.footerContact {
+    padding-left: 30px;
+}
+
+.footerContact :nth-child(2n) {
+    padding-bottom: 10px;
+}
+
+.footerContact p, a{
+    font-size: 0.7rem;
+    color: black;
+}
+
+.footerContact a:hover {
+    color: rgb(255, 70, 118);
+}
+
+.footerMenu {
+    padding-bottom: 30px;
+}
+
+.footerMenu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerMenu ul li{
+    padding: 0 15px;
+    color: black;
+    font-size: 0.7rem;
+
+}
+
+.footerMenu ul :not(:first-child) {
+    border-left: 1px solid black;
+}
+
+.footerMenu ul :first-child:hover {
+    color: rgb(255, 70, 118);
+}
+/* FIN FOOTER  */
