@@ -18,18 +18,23 @@
     src: url(../font/Roboto-Medium.ttf);
 }
 
+@font-face {
+    font-family: "RobotoLight";
+    src: url(../font/Roboto-Light.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "RobotoRegular";
+    font-family: "RobotoLight";
     list-style-type: none;
     text-decoration: none;
 }
 
 section > :first-child {
     text-align: center;
-    margin: 3vh 20vw;
+    margin: 3vh 30vw;
 }
 
 .titre p {
@@ -61,9 +66,10 @@ section > :first-child {
     background-color: white;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     text-transform: uppercase;
     margin-bottom: 2vh;
+    font-family: "RobotoMedium";
 }
 
 h1 {
@@ -72,13 +78,16 @@ h1 {
     font-size: 2.5rem;
 }
 
-h2, h3 {
-    font-family: "RobotoMedium";
+h2 {
     font-size: 1.5rem;
 }
 
 h3 {
     font-size: 1rem;
+}
+
+h4 {
+    font-size: 1.3rem;
 }
 
 li, p {
@@ -213,4 +222,47 @@ li a:hover {
 
 .bloc div p + p {
     font-size: 0.6rem;
+    font-style: italic
+}
+/* FIN SECTION 3 */
+/* DEBUT SECTION 4 */
+
+#section4 .container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+    margin-top: 10vh;
+}
+
+#section4 .container .content p {
+    margin: 6vh 0vw 3vh 0vw;
+    font-size: 1rem;
+    font-family: "RobotoRegular";
+    line-height: 5vh;
+    height: 15vh;
+}
+
+#section4 .container .content .contentTitle {
+    position: relative;
+}
+
+#section4 .container .content .contentTitle div{
+    height: 14px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: -5%;
+} 
+
+#section4 .container .content .contentTitle #underline1 {
+    background-color: rgb(132, 214, 235);
+}
+
+#section4 .container .content .contentTitle #underline2 {
+    background-color: rgb(255, 225, 122);
+}
+
+#section4 .container .content .contentTitle #underline3 {
+    background-color: rgb(205, 132, 235);
 }
